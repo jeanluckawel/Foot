@@ -171,7 +171,7 @@
 				    			<td id="n">0</td>
 				    			<td id="p">1</td>
 				    			<td id="dif">-1</td>
-				    			<td id="pts">0</td>
+				    			<td id="pts">3</td>
 				    		</tr>
 				    		<tr>
 				    			<td>4</td>
