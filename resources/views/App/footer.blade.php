@@ -64,8 +64,8 @@
                 <div class="col-md-8 col-sm-6">
                     <div class="text-right ft-bottom-right">
                         <div class="footer-bottom-share">
-                            <img src="{{ asset('img/SPONSORS/Assurance_9.png') }}" loading="lazy"  style="width: 50px"  alt="Assurance">
-                            <img src="{{ asset('img/SPONSORS/Rn_Design.png') }}" loading="lazy" style="width: 50px"  alt="Assurance">
+{{--                            <img src="{{ asset('img/SPONSORS/Assurance_9.png') }}" loading="lazy"  style="width: 50px"  alt="Assurance">--}}
+{{--                            <img src="{{ asset('img/SPONSORS/Rn_Design.png') }}" loading="lazy" style="width: 50px"  alt="Assurance">--}}
                         </div>
                     </div>
                 </div>

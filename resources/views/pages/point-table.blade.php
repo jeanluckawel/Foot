@@ -84,34 +84,34 @@
 				    			<td>PTS</td>
 				    		</tr>
 				    		<tr>
-				    			<td>01</td>
-				    			<td class="team-name">L3 RESEAUX</td>
+				    			<td>1</td>
+				    			<td class="team-name" ><strong>L2 A</strong></td>
 				    			<td id="j">2</td>
 				    			<td id="g">2</td>
 				    			<td id="n">0</td>
 				    			<td id="p">0</td>
-				    			<td id="dif">+3</td>
-				    			<td id="pts">6</td>
+				    			<td id="dif">+6</td>
+				    			<td id="pts">+6</td>
 				    		</tr>
 				    		<tr>
-				    			<td>01</td>
-				    			<td class="team-name">L3 RESEAUX</td>
+				    			<td>2</td>
+				    			<td class="team-name"><strong>L3 MSI, DSG, GL</strong> </td>
 				    			<td id="j">2</td>
-				    			<td id="g">2</td>
+				    			<td id="g">1</td>
 				    			<td id="n">0</td>
-				    			<td id="p">0</td>
-				    			<td id="dif">+3</td>
-				    			<td id="pts">6</td>
+				    			<td id="p">1</td>
+				    			<td id="dif">+0</td>
+				    			<td id="pts">3</td>
 				    		</tr>
 				    		<tr>
-				    			<td>01</td>
-				    			<td class="team-name">L3 RESEAUX</td>
+				    			<td>3</td>
+				    			<td class="team-name">L4 RESEAUX</td>
 				    			<td id="j">2</td>
-				    			<td id="g">2</td>
+				    			<td id="g">1</td>
 				    			<td id="n">0</td>
-				    			<td id="p">0</td>
-				    			<td id="dif">+3</td>
-				    			<td id="pts">6</td>
+				    			<td id="p">1</td>
+				    			<td id="dif">-1</td>
+				    			<td id="pts">3</td>
 				    		</tr>
 				    		<tr>
 				    			<td>01</td>
