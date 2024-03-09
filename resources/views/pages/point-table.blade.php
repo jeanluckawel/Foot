@@ -44,7 +44,7 @@
 
         <!-- Breadcrumbs Section Start -->
 		<div class="rs-breadcrumbs sec-color">
-            <img src="{{ asset('img/1.L4 RESEAUX.jpg') }}" alt="Breadcrubs" />
+            <img src="{{ asset('img/1.L4 RESEAUX.jpg') }} " loading="lazy" alt="Breadcrubs" />
             <div class="breadcrumbs-inner">
     			<div class="container">
     				<div class="row">
