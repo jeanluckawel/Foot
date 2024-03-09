@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/', [\App\Http\Controllers\Foot::class, 'index'])->name('index');
-Route::view('point','pages.point-table')->name('point');
+//
+//Route::get('/', [\App\Http\Controllers\Foot::class, 'index'])->name('index');
+Route::view('/','pages.point-table')->name('point');
