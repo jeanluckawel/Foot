@@ -1,7 +1,7 @@
 @include('App.app')
 <script type="module" defer src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <header class="fixed w-full">
-    <nav class="bg-red-700 border-gray-200 px-4 lg:px-6 py-2.5 ">
+    <nav class="bg-red-500 border-gray-200 px-4 lg:px-6 py-2.5 ">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="#" class="flex items-center">
                 <img src="{{ asset('img/LogoUDbl.png') }}" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
