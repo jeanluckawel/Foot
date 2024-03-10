@@ -1,143 +1,99 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
-<!-- Mirrored from keenitsolutions.com/products/html/soccer/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2024 13:17:35 GMT -->
-<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Blog | Soccer</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="apple-touch-icon" href="apple-touch-icon.html">
-		<!-- Place favicon.ico in the root directory -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
-		<!-- bootstrap v3.3.6 css -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- font-awesome css -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- animate css -->
-		<link rel="stylesheet" href="css/animate.css">
-		<!-- Main Menu css -->
-		<link rel="stylesheet" href="css/rsmenu-main.css">
-		<!-- rsmenu transitions css -->
-		<link rel="stylesheet" href="css/rsmenu-transitions.css">
-		<!-- hover-min css -->
-		<link rel="stylesheet" href="css/hover-min.css">
-		  <!-- magnific-popup css -->
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<!-- owl.carousel css -->
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<!-- Slick css -->
-		<link rel="stylesheet" href="css/slick.css">
-		<!-- Slick Theme css -->
-		<link rel="stylesheet" href="css/slick-theme.css">
-		<!-- style css -->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- responsive css -->
-		<link rel="stylesheet" href="css/responsive.css">
-		<!-- modernizr js -->
-		<script src="js/modernizr-2.8.3.min.js"></script>
-	</head>
-	<body class="home-two">
-		<!--Preloader start here-->
-
-		<!--Preloader area end here-->
-
-		<!--Header area start here-->
-        @include('App.header')
-		<!--Header area end here-->
+@include('App.app')
+@include('App.header')
+@section('title', 'Blog')
 
 
-        <!-- Breadcrumbs Section Start -->
-		<div class="rs-breadcrumbs sec-color">
-            <img src="images/breadcrumbs/blog.jpg" alt="Breadcrubs" />
-            <div class="breadcrumbs-inner">
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-md-12 text-center">
-    						<h1 class="page-title">News</h1>
-    						<ul>
-    							<li>
-    								<a class="active" href="index.html">Home</a>
-    							</li>
-    							<li>News</li>
-    						</ul>
-    					</div>
-    				</div>
-    			</div>
-            </div>
-		</div>
-		<!-- Breadcrumbs Section End -->
 
-        <!-- Home Blog Start Here -->
-        <div id="rs-blog" class="rs-blog sec-spacer">
-            <div class="container">
-                <div class="row">
-                    @foreach( $foots as $foot)
-                        <div class="col-md-3 col-sm-6 col-xs-6">
-                            <div class="single-blog-slide">
-                                <div class="images">
-                                    <a href="#"><img src="{{ asset('storage/'.$foot->image) }}" alt="Blog Image"></a>
-                                </div>
-                                <div class="blog-details">
-                                    <span class="date"><i class="fa fa-calendar-check-o"></i> {{ $foot->created_at }}</span>
-                                    <h3><a href="#">{{ $foot->title }}</a></h3>
-                                    <p>{{ $foot->description}}</p>
-                                    <div class="read-more">
-                                        <a href="#">{{ $foot->author }}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
+<section class="py-20">
+    <h1 class="mb-12 text-center font-sans text-5xl font-bold">Recent Posts</h1>
+    <div class="mx-auto grid max-w-screen-lg grid-cols-1 gap-5 p-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-10">
+
+        <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+            <a href="#" class="block h-full w-full">
+                <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660241588741-d653d53348fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" />
+                <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Nature</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">A Visit to Mount Abignale</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- Home Blog End Here -->
+            </a>
+        </article>
 
-		<!-- Client Logo Section Start Here-->
+        <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+            <a href="#" class="block h-full w-full">
+                <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660213372424-deecb106a28e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Gardening</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Sunflowers are my favorite</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                </div>
+            </a>
+        </article>
 
-        <!-- Client Logo Section End Here-->
+        <article class="h-90 col-span-1 m-auto min-h-full cursor-pointer overflow-hidden rounded-lg pb-2 shadow-lg transition-transform duration-200 hover:translate-y-2">
+            <a href="#" class="block h-full w-full">
+                <img class="max-h-40 w-full object-cover" alt="featured image" src="https://images.unsplash.com/photo-1660227868332-93e0a0a8c67e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" />
+                <div class="w-full bg-white p-4">
+                    <p class="text-md font-medium text-indigo-500">Coding</p>
+                    <p class="mb-2 text-xl font-medium text-gray-800">Getting to know the Ice Factory Pattern</p>
+                    <p class="text-md font-light text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse vel neque ipsam?</p>
+                    <div class="justify-starts mt-4 flex flex-wrap items-center">
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#js</div>
+                        <div class="mr-2 mt-1 rounded-2xl bg-blue-100 py-1.5 px-4 text-xs text-gray-600">#icefactory</div>
+                    </div>
+                </div>
+            </a>
+        </article>
+    </div>
+</section>
 
-		<!-- Footer Start -->
-        @include('App.footer')
-        <!-- Footer End -->
+<div class=" mx-auto max-w-screen-lg bg-red-500 p-8 text-white md:flex md:items-center md:justify-around md:p-16 lg:rounded-xl">
+    <div class="mr-10 mb-10 md:mb-0">
+        <h2 class="mb-8 max-w-lg text-3xl font-bold sm:text-4xl">La CIF  Accueille les équipes suivantes dans sa première édition 2024.</h2>
+        <ul class="flex max-w-xl flex-wrap gap-4">
+            <li class="flex space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-green-300">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-gray-100">A new feature for you</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-green-300">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-gray-100">Feature Enhancements</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-green-300">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-gray-100">Site Speedup</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-green-300">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-gray-100">More Components</p>
+            </li>
+            <li class="flex space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 text-green-300">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-gray-100">Further Enhancements to the Dashboard</p>
+            </li>
+        </ul>
+    </div>
+    <div class="whitespace-nowrap">
+        <button class="focus:outline-4 rounded-xl bg-emerald-400 px-4 py-3 font-medium text-white shadow-md outline-white transition hover:bg-emerald-500">Try these now</button>
+    </div>
+</div>
 
-        <!-- Search Modal Start Here -->
-        <!-- Search Modal End Here -->
 
-		<!-- Start scrollUp  -->
-
-		<!-- End scrollUp  -->
-
-		<!-- all js here -->
-		<!-- jquery latest version -->
-		<script src="js/jquery.min.js"></script>
-		<!-- Menu js -->
-		<script src="js/rsmenu-main.js"></script>
-		 <!-- jquery-ui js -->
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- meanmenu js -->
-		<script src="js/jquery.meanmenu.js"></script>
-		<!-- wow js -->
-		<script src="js/wow.min.js"></script>
-		<!-- Slick js -->
-		<script src="js/slick.min.js"></script>
-		<!-- masonry js -->
-		<script src="js/masonry.js"></script>
-		<!-- magnific-popup js -->
-		<!-- owl.carousel js -->
-		<script src="js/owl.carousel.min.js"></script>
-		<!-- magnific-popup js -->
-		<script src="js/jquery.magnific-popup.js"></script>
-		<!-- jquery.counterup js -->
-		<script src="js/jquery.counterup.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<!-- main js -->
-		<script src="js/main.js"></script>
-	</body>
-
-<!-- Mirrored from keenitsolutions.com/products/html/soccer/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2024 13:18:54 GMT -->
-</html>
