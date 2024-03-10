@@ -11,8 +11,9 @@
                         <nav class="rs-menu">
                             <ul class="nav-menu">
                                 <!-- Home -->
-{{--                                <li ><a href="{{ route('index') }}">Accueil</a></li>--}}
+                                <li ><a href="{{ route('index') }}">Accueil</a></li>
                                 <li><a href="{{ route('point') }}">Classement</a></li>
+                                <li><a href="{{ route('point') }}">Meilleurs Butteurs</a></li>
 {{--                                <li><a href="#">Match</a></li>--}}
 {{--                                <li><a href="#">A propos</a></li>--}}
                             </ul>
