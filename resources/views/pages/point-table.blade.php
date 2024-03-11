@@ -431,7 +431,6 @@
 
         <!-- Point Table Section Start -->
         <div class="rs-point-table sec-spacer">
-
 	        <div class="container">
                 <br>
                 <h1 >Groupe A</h1>

@@ -16,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 //
 Route::get('/', [\App\Http\Controllers\Foot::class, 'index'])->name('index');
 Route::view('/classement','pages.point-table')->name('point');
+ 
+Route::view('/milleur-buteur','pages.meilleur-buteur')->name('milleur-buteur');
+ 
 Route::view('/meilleurs-butteurs','pages.point-table')->name('point');
+ 
